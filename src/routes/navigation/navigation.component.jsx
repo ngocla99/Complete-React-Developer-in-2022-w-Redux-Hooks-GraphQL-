@@ -7,13 +7,13 @@ import CardDropdown from '../../components/card-dropdown/card-dropdown.component
 
 import { ReactComponent as CrwnLogo } from '../../assets/crown.svg';
 import { UserContext } from '../../context/user.context';
-import { CardContext } from '../../context/card.context';
+import { CartContext } from '../../context/cart.context';
 
 import './navigation.styles.scss';
 
 const Navigation = () => {
   const { currentUser } = useContext(UserContext);
-  const { isCartOpen } = useContext(CardContext);
+  const { isCartOpen } = useContext(CartContext);
 
   return (
     <Fragment>
